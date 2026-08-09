@@ -132,3 +132,34 @@ ta-ind-04-Farinango/
 │
 └── figuras/
     └── fig_speedup.png
+
+
+## Instrucciones exactas de compilación
+
+Requisitos: distribución LaTeX con `pdflatex` y `biber` (TeX Live 2023+ o
+Overleaf, que ya los incluye).
+
+Desde la carpeta `docs/`, ejecutar en este orden exacto:
+
+```bash
+pdflatex TA_IND_04_Informe.tex
+biber TA_IND_04_Informe
+pdflatex TA_IND_04_Informe.tex
+pdflatex TA_IND_04_Informe.tex
+```
+
+En Overleaf: subir la carpeta completa del repositorio, verificar que el
+compilador esté configurado como **pdfLaTeX** (Menu → Settings →
+Compiler) y compilar normalmente; Overleaf detecta `biblatex` y ejecuta
+`biber` automáticamente.
+
+La figura `figuras/fig_speedup.png` se referencia desde el `.tex` con ruta
+relativa `../figuras/fig_speedup.png`, por lo que la estructura de carpetas
+debe conservarse tal como se entrega.
+
+## Declaración de uso de inteligencia artificial generativa
+
+Ver la sección "Declaración de uso de inteligencia artificial generativa"
+al final de `docs/TA_IND_04_Informe.pdf`.
+
+
