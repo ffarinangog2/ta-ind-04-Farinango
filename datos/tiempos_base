@@ -1,1 +1,20 @@
 
+transformacion,motor,configuracion,repeticiones,mediana_s,speedup
+T1,pandas,pandas,5,0.2119435,
+T2,pandas,pandas,5,0.117135,
+T3,pandas,pandas,5,0.2888583,
+T4,pandas,pandas,5,2.2658587,
+T5,pandas,pandas,5,1.5252129,
+T1,pyspark,executors[4],5,0.3456639,0.6131491
+T2,pyspark,executors[4],5,0.6874908,0.1703805
+T3,pyspark,executors[1],5,1.3615029,0.2121614
+T3,pyspark,executors[2],5,0.7084963,0.4077062
+T3,pyspark,executors[4],5,0.8657363,0.3336562
+T4,pyspark,executors[4],5,1.8100053,1.2518520
+T5,pyspark,executors[4],5,1.3564848,1.1243863
+T2,pyspark,executors[1],5,1.0849827,0.1079602
+T2,pyspark,executors[2],5,1.0141498,0.1155007
+# Fuente: repositorio pe-u4-spark-equipo-c, commit a5ffcd9
+# Foco individual de este informe: T2 (agrupacion y agregacion)
+# Las filas T2 executors[1] y executors[2] fueron medidas individualmente
+# por Freddy Farinango para TA-IND-04 (commit bbe19c8, fusionado en a5ffcd9)
