@@ -625,24 +625,29 @@ prematura.
 \section{Declaraci\'on de uso de inteligencia artificial generativa}
 \label{sec:ia}
 
-Se emplearon dos herramientas de inteligencia artificial generativa en la
-elaboraci\'on de este informe. \textbf{Claude (Anthropic)} asisti\'o en: la
-redacci\'on y estructuraci\'on del documento LaTeX conforme a la gu\'ia
-TA-IND-04; el c\'alculo de la regresi\'on lineal de m\'inimos cuadrados para
-estimar $\alpha$, $\beta$ y $\gamma$ de la ecuaci\'on~\eqref{eq:umbral}; la
-generaci\'on del script de la Fig.~\ref{fig:speedup} con matplotlib; la
-verificaci\'on de las referencias bibliogr\'aficas y sus DOI; y la redacci\'on
-del diagrama TikZ de la Fig.~\ref{fig:arquitectura}. \textbf{Codex (OpenAI)}
-asisti\'o en la auditor\'ia de solo lectura del repositorio de PE-U4 y en la
-ejecuci\'on del protocolo de medici\'on de T2 con $N=1$ y $N=2$ executors,
-replicando exactamente el protocolo ya usado por el equipo para $N=4$. Todo
-el an\'alisis cuantitativo, la interpretaci\'on de los resultados, la
-propuesta de integraci\'on al PFC y las conclusiones son de autor\'ia y
-responsabilidad del estudiante. Se declara adem\'as que la medici\'on de T2
-con $N=1$ y $N=2$ no exist\'ia en el commit original de PE-U4 --la gu\'ia
-grupal solo exig\'ia ese escalado para T3-- y fue generada expresamente para
-este informe individual, incorpor\'andose al repositorio grupal en el commit
-\texttt{bbe19c8} para preservar la trazabilidad exigida.
+Se emplearon dos herramientas de inteligencia artificial generativa como
+apoyo puntual en la elaboraci\'on de este informe, cuyo contenido t\'ecnico,
+an\'alisis e interpretaci\'on son de autor\'ia y responsabilidad del
+estudiante. \textbf{Claude (Anthropic)} se us\'o para: corregir ortograf\'ia,
+tildes y redacci\'on en espa\~ol t\'ecnico; ordenar la estructura del
+documento conforme a las diez secciones exigidas por la gu\'ia; verificar de
+forma independiente los c\'alculos num\'ericos ya resueltos por el estudiante
+(sustituci\'on en las ecuaciones de Amdahl, Karp-Flatt, eficiencia y umbral de
+rentabilidad); resolver dudas puntuales sobre temas previamente
+desconocidos para el estudiante, en particular la sintaxis de \LaTeX{} para
+entornos de ecuaci\'on numerados, tablas \texttt{booktabs} y el paquete
+\texttt{siunitx}, as\'i como la construcci\'on del diagrama en TikZ de la
+Fig.~\ref{fig:arquitectura}; y ayudar a localizar y verificar el DOI de las
+referencias bibliogr\'aficas citadas. \textbf{Codex (OpenAI)} se us\'o
+\'unicamente para ejecutar, sobre el cl\'uster Standalone propio, el
+protocolo de medici\'on de T2 con $N=1$ y $N=2$ executors ya definido y
+utilizado por el equipo para las dem\'as configuraciones, sin modificar el
+protocolo ni el c\'odigo de las transformaciones existentes. Se declara
+adem\'as que la medici\'on de T2 con $N=1$ y $N=2$ no exist\'ia en el commit
+original de PE-U4 --la gu\'ia grupal solo exig\'ia ese escalado para T3-- y
+fue generada expresamente para este informe individual, incorpor\'andose al
+repositorio grupal en el commit \texttt{bbe19c8} para preservar la
+trazabilidad exigida.
 
 % ----------------------------------------------------------------------------
 \printbibliography
